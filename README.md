@@ -3,7 +3,7 @@
 ## 메인 페이지
 https://github.com/yuram2/webs_class
 
-##자바스크립트
+## 자바스크립트
 https://yuram2.github.com/webs_class/script/index.html
 
 ## HTML 래퍼런스 
