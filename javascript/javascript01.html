@@ -608,13 +608,9 @@
         
         // 14. 객체 : 데이터를 저장(키와 값) : 표현 방법 5
         {
-            const obj = [{
-                a: 100,
-                b: 200
-            },
-            {
-                c: "javascript"
-            }
+            const obj = [
+                {a: 100, b: 200},
+                {c: "javascript"}
         ];
         
             document.querySelector(".result14").innerHTML = obj[0].a + "<br>" + obj[0].b + "<br>" + obj[1].c;
@@ -625,10 +621,7 @@
             const obj = {
                 a: 100,
                 b: [200, 300],
-                c: {
-                    x: 400,
-                    y: 500,
-                },
+                c: {x: 400, y: 500},
                 d: "javascript"
             }
 
@@ -641,11 +634,7 @@
             const b = 200;
             const c = "javascript";
 
-            const obj = {
-                a,
-                b,
-                c
-            }
+            const obj = {a, b, c} 
 
             document.querySelector(".result16").innerHTML = obj.a + "<br>" + obj.b + "<br>" + obj.c;
         }
@@ -655,10 +644,7 @@
             const obj = {
                 a: 100,
                 b: [200, 300],
-                c: {
-                    x: 400,
-                    y: 500
-                },
+                c: {x: 400, y: 500},
                 d: "javascript",
                 e: function () {
                     document.querySelector(".result17").innerHTML += "javascript가 실행되었습니다." + "<br>";
