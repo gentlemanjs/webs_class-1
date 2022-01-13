@@ -55,7 +55,6 @@
 #color3 {color: #0000ff; }
                     </pre></code>
                 <style>
-                    body{}
                     #color1 {color: #ff0000; } 
                     #color2 {color: #00ff00; }
                     #color3 {color: #0000ff; }
@@ -77,24 +76,21 @@
                     투명도는 0과 1사이 값으로 표현합니다.</p>
                 <div class="code">
                     <pre><code>
-#color4 {color: rgb(255,0,0); } 
-#color5 {color: rgb(0,255,0); }
-#color6 {color: rgb(0,0,255); }
+#color1 {color: rgb(255,0,0); } 
+#color2 {color: rgb(0,255,0); }
+#color3 {color: rgb(0,0,255); }
                     </pre></code>    
                 <style>
-                    body {
-                    }
-                    #color4 {color: rgb(255,0,0); } 
-                    #color5 {color: rgb(0,255,0); }
-                    #color6 {color: rgb(0,0,255); }
+                    #color1 {color: rgb(255,0,0); } 
+                    #color2 {color: rgb(0,255,0); }
+                    #color3 {color: rgb(0,0,255); }
                 </style>
                 <body>
-                    <div id="color4">CSS 색상</div>
-                    <div id="color5">CSS 색상</div>
-                    <div id="color6">CSS 색상</div>
+                    <div id="color1">CSS 색상</div>
+                    <div id="color2">CSS 색상</div>
+                    <div id="color3">CSS 색상</div>
                 </body>
                 </div>
-
                 <h4>RGBA</h4>
                 <p> RGBA 는 RGB 에 alpha 채널을 하나 더 추가한 것입니다. 
                     이것은 IE9 이상이나 파이어폭트 3 이상, 크롬, 사파리에 적용이 되는 값의 형태입니다. 
@@ -104,24 +100,21 @@
                     0 이면 완전 투명으로 글자가 안보이게 되고 1 은 완전 불투명으로 아무 변화가 없습니다.</p>
                 <div class="code">
                     <pre><code>
-#color7 {color: rgba(255,0,0,0.3); } 
-#color8 {color: rgba(0,255,0,0.3); }
-#color9 {color: rgba(0,0,255,0.3); } 
+#color4 {color: rgba(255,0,0,0.3); } 
+#color5 {color: rgba(0,255,0,0.3); }
+#color6 {color: rgba(0,0,255,0.3); } 
                     </pre></code>
                 <style>
-                    body {
-                    }
-                    #color7 {color: rgba(255,0,0,0.3); } 
-                    #color8 {color: rgba(0,255,0,0.3); }
-                    #color9 {color: rgba(0,0,255,0.3); }
+                    #color4 {color: rgba(255,0,0,0.3); } 
+                    #color5 {color: rgba(0,255,0,0.3); }
+                    #color6 {color: rgba(0,0,255,0.3); }
                 </style>
                 <body>
-                    <div id="color7">CSS 색상</div>
-                    <div id="color8">CSS 색상</div>
-                    <div id="color9">CSS 색상</div>
+                    <div id="color4">CSS 색상</div>
+                    <div id="color5">CSS 색상</div>
+                    <div id="color6">CSS 색상</div>
                 </body>
                 </div>
-
                 <h4>HSL</h4>
                 <p> HSL 도 전 브라우저 버전에 적용되는 것은 아닙니다. 
                     RGBA 와 마찬가지로 IE9 이상이나 파이어폭트 3 이상, 크롬, 사파리에 적용 됩니다. 
@@ -135,17 +128,35 @@
                     0 은 검정색이고 100 은 하얀색 입니다.</p>
                 <div class="code">
                     <pre><code>
-#color10 {color: hsl(120, 100%, 50%); } 
-#color11 {color: hsl(120, 100%, 75%); }
-#color12 {color: hsl(120, 60%, 70%); }
+#color7 {color: hsl(120, 100%, 50%); } 
+#color8 {color: hsl(120, 100%, 75%); }
+#color9 {color: hsl(120, 60%, 70%); }
                     </pre></code>
                 <style>
-                    body {
-                    }
-                    
-                    #color10 {color: hsl(120, 100%, 50%); } 
-                    #color11 {color: hsl(120, 100%, 75%); }
-                    #color12 {color: hsl(120, 60%, 70%); }
+                    #color7 {color: hsl(120, 100%, 50%); } 
+                    #color8 {color: hsl(120, 100%, 75%); }
+                    #color9 {color: hsl(120, 60%, 70%); }
+                </style>
+                <body>
+                    <div id="color7">CSS 색상</div>
+                    <div id="color8">CSS 색상</div>
+                    <div id="color9">CSS 색상</div>
+                </body>
+                </div>
+                <h4>HALA</h4>
+                <p> HSLA 도 전 브라우저 버전에 적용되는 것은 아닙니다. 
+                    RGBA 와 마찬가지로 IE9 이상이나 파이어폭트 3 이상, 크롬, 사파리에 적용 됩니다. 
+                    마지막에 들어가는 A 값은 RGBA 와 같이 투명도를 나타냅니다.</p>
+                <div class="code">
+                    <pre><code>
+#color10 {color: hsla(120, 100%, 50%, 0.3); } 
+#color11 {color: hsla(120, 100%, 75%, 0.3); }
+#color12 {color: hsla(120, 100%, 70%, 0.3); }
+                    </pre></code>
+                <style>
+                    #color10 {color: hsla(120, 100%, 50%, 0.3); } 
+                    #color11 {color: hsla(120, 100%, 75%, 0.3); }
+                    #color12 {color: hsla(120, 100%, 70%, 0.3); }
                 </style>
                 <body>
                     <div id="color10">CSS 색상</div>
@@ -153,24 +164,18 @@
                     <div id="color12">CSS 색상</div>
                 </body>
                 </div>
-
-                <h4>HALA</h4>
-                <p> HSLA 도 전 브라우저 버전에 적용되는 것은 아닙니다. 
-                    RGBA 와 마찬가지로 IE9 이상이나 파이어폭트 3 이상, 크롬, 사파리에 적용 됩니다. 
-                    마지막에 들어가는 A 값은 RGBA 와 같이 투명도를 나타냅니다.</p>
+                <h4>색상 이름</h4>
+                <p>모든 브라우저에서 지원하는 색상 명은 140 개로 지정이 되어 있습니다. 크로스 브라이징을 염두 해 두신다면 색상 명으로 개발하는 것이 가독성이 높을 뿐만 아니라 지원하지 않는 브라우저 때문에 속 썩을 일이 없습니다. 하지만 컬러 개수가 얼마 되지 않기 때문에 디테일한 색상 작업은 힘듭니다.</p>
                 <div class="code">
                     <pre><code>
-#color13 {color: hsla(120, 100%, 50%, 0.3); } 
-#color14 {color: hsla(120, 100%, 75%, 0.3); }
-#color15 {color: hsla(120, 100%, 70%, 0.3); }
+#color13 {color: red; } 
+#color14 {color: green; }
+#color15 {color: blue; }
                     </pre></code>
                 <style>
-                    body {
-                    }
-                    
-                    #color13 {color: hsla(120, 100%, 50%, 0.3); } 
-                    #color14 {color: hsla(120, 100%, 75%, 0.3); }
-                    #color15 {color: hsla(120, 100%, 70%, 0.3); }
+                    #color13 {color: red; } 
+                    #color14 {color: green; }
+                    #color15 {color: blue; }
                 </style>
                 <body>
                     <div id="color13">CSS 색상</div>
@@ -178,29 +183,6 @@
                     <div id="color15">CSS 색상</div>
                 </body>
                 </div>
-                
-                <h4>색상 이름</h4>
-                <p>모든 브라우저에서 지원하는 색상 명은 140 개로 지정이 되어 있습니다. 크로스 브라이징을 염두 해 두신다면 색상 명으로 개발하는 것이 가독성이 높을 뿐만 아니라 지원하지 않는 브라우저 때문에 속 썩을 일이 없습니다. 하지만 컬러 개수가 얼마 되지 않기 때문에 디테일한 색상 작업은 힘듭니다.</p>
-                <div class="code">
-                    <pre><code>
-#color16 {color: red; } 
-#color17 {color: green; }
-#color18 {color: blue; }
-                    </pre></code>
-                    <!DOCTYPE HTML>
-                    <style>
-                    body {
-                    }
-                    #color16 {color: red; } 
-                    #color17 {color: green; }
-                    #color18 {color: blue; }
-                    </style>
-                    <body>
-                    <div id="color16">CSS 색상</div>
-                    <div id="color17">CSS 색상</div>
-                    <div id="color18">CSS 색상</div>
-                    </body>
-        </div>
         <!-- //refer -->
     </main>
 
