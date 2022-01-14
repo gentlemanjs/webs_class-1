@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/prism.css">
+
+    <!-- script -->
+    <script src="assets/js/prism.js"></script>
+</head>
+<body>
+    <header id="header">
+        <h1><a href="index.html">Javascript</a></h1>
+        <nav>
+            <ul>
+                <li><a href="reference01.html">기초 문법</a></li>
+                <li><a href="reference02.html">변수</a></li>
+                <li><a href="reference03.html">자료형</a></li>
+                <li><a href="reference04.html">for문</a></li>
+                <li><a href="reference05.html">연산자</a></li>
+                <li><a href="reference06.html">조건문</a></li>
+                <li><a href="reference07.html">반복문</a></li>
+                <li class="active"><a href="reference08.html">함수</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="main">
+        <div class="doc">
+            <h2>함수</h2>
+            <p> 변수와는 다르게 함수를 사용하면 코드를 메모리에 저장했다가 필요할 때마다 호출하여 사용할 수 있습니다. 
+                예를 들어 tv 리모컨을 보면 각 채널의 버튼이 있습니다. 그리고 각 버튼에는 tv의 해당 채널로 바꿀 수 있는 코드가 저장되어 있죠. 이 코드는 사용자가 리모컨의 버튼을 눌러(호출)야만 실행 됩니다. 이때 각 tv 리모컨의 버튼은 함수를 저장하고 있으며 버튼을 누를 때마다 함수가 호출 된다고 할 수 있습니다.</p>
+              
+            <h3>선언적 함수</h3>
+            <p>함수를 사용하여 코드를 저장합니다. 변수를 선언할 때 var 키워드를 사용한 것처럼 함수에서는 function 키워드를 사용해 변수를 선언 합니다. 함수 정의문은 다음과 같이 선언합니다.</p>
+            <div class="code">function 함수명(){<br>
+                            &nbsp;&nbsp;자바스크립트 코드;<br>
+            }
+            </div>
+
+            <p>다음과 같이 익명 함수(함수명이 없는 함수)를 선언하고 변수에 참조해도 됩니다.</p>
+            <div class="code">참조변수 = function(){<br>
+                            &nbsp;&nbsp;자바스크립트 코드;<br>
+            }
+            </div>
+            <p>함수 정의문({..})안에 작성된 코드는 즉시 실행되지 않습니다. 함수는 메모리에 할당되어 ㄷ대기하고 있다가 함수가 호출되면 실행됩니다. 정의되어 있는 함수를 호출하는 기본형은 다음과 같습니다.</p>
+            <div class="code">함수명();<br>또는 참조변수();<br>
+                function myFuc(){<br>
+                &nbsp;&nbsp;document.write("hello~","&lt;br&gt;");<br>
+                &nbsp;&nbsp;document.write("welcome","&lt;br&gt;");<br>
+            }<br>
+            myFuc();<br>
+            <br>
+            myFuc();<br>
+            함수가 2회 호출되어 코드내용을 2회 실행합니다.<br>
+            <br>
+            hello<br>welcome<br>hello<br>welcome 
+            </div>
+
+            <h3>익명 함수</h3>
+            <p>문법</p>
+            <p>설명</p>
+            <div class="code">코드</div>
+
+            <h3>매개변수 함수</h3>
+            <p>문법</p>
+            <p>설명</p>
+            <div class="code">코드</div>
+
+            <h3>리턴값 함수</h3>
+            <p>문법</p>
+            <p>설명</p>
+            <div class="code">코드</div>
+        </div>
+    </main>
+
+</body>
+
+</html>

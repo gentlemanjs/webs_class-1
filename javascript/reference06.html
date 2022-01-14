@@ -25,6 +25,7 @@
                 <li><a href="reference05.html">연산자</a></li>
                 <li class="active"><a href="reference06.html">조건문</a></li>
                 <li><a href="reference07.html">반복문</a></li>
+                <li><a href="reference08.html">함수</a></li>
             </ul>
         </nav>
     </header>
@@ -53,14 +54,16 @@
             조건문 내의 코드를 실행하면 "hello"가 출력되겠죠.
             <div class="code">
                 <pre><code>var num = 10;
-if(num&lt;500){         // true를 반환합니다.
+if(num&lt;500){         
+    // true를 반환합니다.
     document.write("hello");
 }</code></pre>
             </div><br>
             다음 예제의 조건식에 있는 0은 Boolean()메서드에 0을 입력했을 때와 결과가 같습니다. 
             그 결과 false를 반환하여 조건문의 코드를 실행하지 않습니다.
             <div class="code">
-                <pre><code>if(num&lt;500){         // false를 반환합니다.
+                <pre><code>if(num&lt;500){         
+    // false를 반환합니다.
     document.write("hello");
 }</code></pre>
             </div><br>
@@ -129,13 +132,17 @@ if(num&lt;500){         // true를 반환합니다.
                 <pre><code>    &lt;script&gt;
          var mon = prompt("현재는 몇 월입니까?", "0");
 
-         if(mon &gt;= 9 && mon &lt;= 11){             // 9 ~ 11
+         if(mon &gt;= 9 && mon &lt;= 11){             
+             // 9 ~ 11
              document.write("독서의 계절 가을이네요!!");
-         } else if(mon &gt;= 6 && mon &lt;= 8){      // 6 ~ 8
+         } else if(mon &gt;= 6 && mon &lt;= 8){      
+             // 6 ~ 8
              document.write("여행가기 좋은 여름이네요!!");
-         } else if(mon &gt;= 3 && mon &lt;= 5){      // 3 ~ 5
+         } else if(mon &gt;= 3 && mon &lt;= 5){      
+             // 3 ~ 5
              document.write("햇살 가득한 봄이네요!!");
-         } else {                                           // 나머지 입력
+         } else {                                           
+             // 나머지 입력
              document.write("스키의 계절 겨울이네요!!");
          }
      &lt;/script&gt;</code></pre>

@@ -117,6 +117,9 @@ body {
     border-collapse: collapse;
     border-spacing: 0px
 }
+.refer .table table th a {
+    color: #00DB72;
+}
 .refer .table table th {
     border: 1px solid #aaa;
     padding: 15px;
