@@ -45,7 +45,7 @@
                 <li>04. 화살표 함수 : 선언적 함수</li>
                 <li>04. 화살표 함수 : 익명 함수</li>
                 <li>04. 화살표 함수 : 리턴값 함수</li>
-                <li>04. 화살표 함수 : 매개변수 함수</li>
+                <li>04. 화살표 함수 : 익명함수 + 매개변수 +리턴값 함수</li>
                 <li>01. 내부 함수</li>
                 <li>01. 즉시실행 함수</li>
                 <li>01. 파라미터 함수</li>
@@ -95,9 +95,51 @@
         {
             function func(){
                 const str = "함수가 실행되었습니다.";
-                return srt;
+                return str;
             }
             document.write(func());
+        }
+        //05. 화살표 함수 : 선언적 함수
+        {
+            // function func(){
+            //     document.write("함수가 실행되었습니다.");
+            // }
+            // func();
+            func = () => {
+                document.write("함수가 실행되었습니다5.");
+            }
+            func();
+        }
+        //06. 화살표 함수 : 익명 함수
+        {
+            // const func = function(){
+            //     document.write("함수가 실행되었습니다6.");
+            // }
+            // func();
+            const func = () => {
+                document.write("함수가 실행되었습니다6")
+            }
+            func();
+        }
+        //07. 화살표 함수 : 리턴값 함수
+        {
+            // function func(){
+            //     const str = "함수가 실행되었습니다.7";
+            //     return str;
+            // }
+            // document.write(func());
+            func = () => {
+                const str = "함수가 실행되었습니다.7";
+                return str;
+            }
+            document.write(func());
+        }
+        //08. 화살표 함수 : 익명함수 + 매개변수 + 리턴값
+        {
+            const func = (str) => {
+                return str;
+            }
+            document.write(func("함수가 실행되었습니다.8"));
         }
         </script>
     </main>

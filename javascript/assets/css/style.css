@@ -64,6 +64,7 @@ a {
     position: fixed;
     right: 20px; 
     bottom: 20px;
+    z-index: 10000;
 }
 
 .top a {
@@ -76,6 +77,22 @@ a {
     color: #fff;
     display: block;
 }
+/* back */
+.back {
+    position: fixed;
+    right: 20px;
+    top: 20;
+    z-index: 10000;
+}
+.back a {
+    width: 60px; 
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    display: block;
 
 /* header */
 #header {
@@ -99,6 +116,14 @@ a {
     border-radius: 30px;
     display: inline-block;
     margin-bottom: 10px;
+}
+#header nav ul:nth-child(2) li a {
+    font-size: 14px;
+    padding: 8px 20px 6px 20px;
+}
+#header nav ul:nth-child(3) li a {
+    font-size: 14px;
+    padding: 8px 20px 6px 20px;
 }
 
 #header nav ul li.active a {
@@ -332,13 +357,14 @@ a {
     font-size: 16px;
 }
 
-.result div {
+.result  > div {
     background: #272822;
     padding: 20px;
     color: white;
     border-radius: 0 5px;
     font-size: 16px;
-    line-height: 1.4;   
+    line-height: 1.4;
+    display: none;   
 
 }
 
