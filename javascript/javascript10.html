@@ -114,11 +114,24 @@
                 </div>
 
                 <div class="btn">
+                    <a href="#c" class="btn0">리셋</a>
                     <a href="#c" class="btn1">이 버튼을 클릭(selected)하면 두번째 이미지가 선택 또는 해제됩니다.</a>
                     <a href="#c" class="btn2">이 버튼을 클릭(selected)하면 모든 이미지가 선택 또는 해제됩니다.</a>
                 </div>
                 <div class="code">
                     <pre class="line-numbers"><code class="language-js">{
+    //리셋
+    document.querySelector("#sample2 .btn0").addEventListener("click", function(){
+        document.querySelectorAll("#sample2 .view > div").forEach(function(el){
+        el.classList.remove("selected");
+        });
+    });
+    //각각의 이미지를 클릭하면 각각 선택/해제
+    document.querySelectorAll("#sample2 .view > div").forEach(function(el){
+        el.addEventListener("click", function(){
+            el.classList.toggle("selected");
+        });
+    });
     //두번째 이미지 선택,해제
     document.querySelector("#sample2 .btn1").addEventListener("click", function(){
         document.querySelector("#sample2 .view2").classList.toggle("selected");
@@ -162,7 +175,7 @@
         <!-- //script -->
     </main>
     <!-- script -->
-
+    
     <script>
         // sample1
         //두번째 이미지 선택
@@ -188,11 +201,18 @@
         });
 
         //sample2
-        //두번째 이미지 선택,해제
-        document.querySelector("#sample2 .btn1").addEventListener("click", function(){
-            document.querySelector("#sample2 .view2").classList.toggle("selected");
+        //리셋
+        document.querySelector("#sample2 .btn0").addEventListener("click", function(){
+            document.querySelectorAll("#sample2 .view > div").forEach(function(el){
+            el.classList.remove("selected");
+            });
         });
-
+        //숙제 각각의 이미지를 클릭하면 각각 선택/해제
+        document.querySelectorAll("#sample2 .view > div").forEach(function(el){
+        el.addEventListener("click", function(){
+            el.classList.toggle("selected");
+            });
+        });
         //모든 이미지 선택, 해제
         document.querySelector("#sample2 .btn2").addEventListener("click", function(){
             document.querySelectorAll("#sample2 .view > div").forEach(function(el){
@@ -200,16 +220,8 @@
             });
         });
 
-        //두번째 이미지를 클릭하면 두번쨰 이미지를 선택 또는 해제
-        document.querySelector("#sample2 .view2").addEventListener("click", function(){
-            document.querySelector("#sample2 .view2").classList.toggle("selected");
-        });
 
 
-        //첫번쨰 이미지를 클릭하면 첫번째 이미지를 선택
-        document.querySelector("#sample2 .view1").addEventListener("click", function(){
-            document.querySelector("#sample2 .view1").classList.toggle("selected");
-        });
 
         //sample3
         //리셋
@@ -232,7 +244,7 @@
         document.querySelector("#sample3 .btn2").addEventListener("click", function(){
             document.querySelectorAll("#sample3 .view > div").forEach(function(el){
                 if(el.classList.contains("selected")){
-                    el.classList.toggle("selectedBlue");
+                    el.classList.toggle("Blue");
                 }
             });
         });
