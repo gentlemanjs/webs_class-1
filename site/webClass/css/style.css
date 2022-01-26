@@ -191,24 +191,24 @@
 .itType01 .text {
     float: left;
     width: 386.66px;
-    padding: 530px;
+    height: 530px;
     margin-right: 20px;
     background-color: #ccc;
 }
 .itType01 .img1 {
     float: left;
     width: 386.66px;
-    padding: 530px;
+    height: 530px;
     margin-right: 20px;
     background-image: url(../img/test@1x.jpg);
+    background-size: 100%;
 }
 .itType01 .img2 {
     float: left;
     width: 386.66px;
-    padding: 530px;
+    height: 530px;
     margin-right: 20px;
     background-image: url(../img/img_text_bg2.jpg);
-    background-size: 100%;
 }
 /* @media (-webkit-min-device-picel-ratio: 1.5){
     .itType01 .img1 {
@@ -216,7 +216,7 @@
     }
 }
 @media (-webkit-min-device-picel-ratio: 2.5){
-    .itType01 .img1 {
+    .itType01 .img2 {
         background-image: url(../img/@3x.jpg);
     }
 } */
