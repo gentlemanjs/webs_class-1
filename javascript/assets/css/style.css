@@ -425,9 +425,10 @@ img {
     border: 1px dashed #0243f1;
     color: #0243f1;
     border-radius: 50px;
-    padding: 10px 30px;
+    padding: 7px 10px;
     display: inline-block;
     margin: 5px 0;
+    font-size: 12;
 }
 .javascript .menu li a:hover {
     background: #0243f1;
@@ -437,6 +438,12 @@ img {
     .javascript h1 {
         font-size: 55px;
         padding: 10px 0;
+    }
+    .javascript .menu ul {
+        display: none;
+    }
+    .javascript .menu ul:first-child {
+        display: block;
     }
 }
 /* test */
