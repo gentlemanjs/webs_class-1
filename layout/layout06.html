@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- v -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout06</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            width: 100%;
+            height: 100%;
+        }
+
+        #header {
+            width: 100%;
+            height: 109px;
+            background: #e9e0f2;
+        }
+
+        #banner {
+            width: 100%;
+            height: 893px;
+            background: #bdc495;
+        }
+
+        #contents {
+            width: 100%;
+            height: 4966px;
+            background: #fdd7d7;
+        }
+
+        #footer {
+            width: 100%;
+            height: 399px;
+            background: #766ab9;
+        }
+
+        .header-container {
+            width: 1200px;
+            height: 109px;
+            background: #617775;
+            margin: 0 auto;
+        }
+
+        .banner-container {
+            width: 1200px;
+            height: 893px;
+            background: #69807d;
+            margin: 0 auto;
+        }
+
+        .contents-container {
+            width: 1200px;
+            height: 580px;
+            background: #009688;
+            margin: 0 auto;
+        }
+
+        .cont1 {
+            width: 1200px;
+            height: 640px;
+            background: #67454d;
+            margin: 0 auto;
+        }
+
+        .cont2 {
+            width: 1200px;
+            height: 3250px;
+            background: #5f9fa1;
+            margin: 0 auto;
+        }
+
+        .cont3 {
+            width: 0;
+            height: 0;
+            overflow: hidden;
+        }
+        #contents .contents-container .cont3 .A .li .img1 {
+            float: left;
+            width: 363px;
+            height: 462px;
+        }
+        #contents .contents-container .cont3 .A .li .img2{
+            float: left;
+            width: 363px;
+            height: 462px;
+        }
+        #contents .contents-container .cont3 .A .li .img3{
+            float: left;
+            width: 363px;
+            height: 462px;
+        } 
+
+        .footer-container {
+            width: 1200px;
+            height: 399px;
+            background: #00796B;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header-container"></div>
+        </header>
+        <article id="banner">
+            <div class="banner-container"></div>
+        </article>
+        <section id="contents">
+            <div class="contents-container">
+                <div class="cont1"></div>
+                <div class="cont2"></div>
+                <div class="cont3">
+                    <div class="A">
+                        <h3>FIND opportunities</h3>
+                        <div class="i1">
+                            <img src="../site/webClass/img/img_text_bg1.jpg" alt="img1">
+                            <h4>Fintech</h4>
+                            <p>Payment</p>
+                        </div>
+                        <div class="i1">
+                            <img src="../site/webClass/img/img_text_bg2.jpg" alt="img2">
+                            <h4>Digital Marketing</h4>
+                            <p>IMS</p>
+                        </div>
+                        <div class="i1">
+                            <img src="../site/webClass/img/test@1x.jpg" alt="img3">
+                            <h4>Platform</h4>
+                            <p>Commerce, Magazine</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="footer-container"></div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
